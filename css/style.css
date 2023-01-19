@@ -2,7 +2,14 @@
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu-Regular.ttf'),
+    url('../assets/fonts/Ubuntu-Bold.ttf'), 
+    url('../assets/fonts/Ubuntu-Medium.ttf') format('truetype') ;
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root{
     --Marine-blue: hsl(213, 96%, 18%);
@@ -15,6 +22,7 @@
     --Magnolia: hsl(217, 100%, 97%);
     --Alabaster: hsl(231, 100%, 99%);
     --White: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu';
 }
 
 *{
@@ -31,7 +39,7 @@ body{
 
     font-size: 16px;
     min-height: 100vh;
-    
+    font-family: 'Ubuntu';
     display: flex;
     justify-content: center;
    
@@ -44,24 +52,34 @@ body{
     display: flex;
     flex-direction: row;
     background-color: var(--White);
-    width: 50rem;
-    height: 600px;
+    width: 59rem;
+    height: 37.5rem;
+   /* height: 600px; */
     
 
 }
 header{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+   /* margin: 1rem; */
+    margin-top: 1rem;
+    margin-left: 1rem;
     background-image: url("../assets/images/bg-sidebar-desktop.svg");
     background-repeat: no-repeat;
-    width: 274px;
+    width:291px ;
     height: 568px;
+   /* border-top-right-radius: 11px; 
+    border-bottom-right-radius: 11px; */
 }
 main{
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    align-self: center;
+    margin-top:3.5rem ;
+   
+    align-items: center;
+    
+    width: 100%;
 }
 header p{
     color: var(--Cool-gray);
@@ -69,11 +87,11 @@ header p{
 .container_boxes{
     
     max-height: 284px;
+
 }
 
 .step_box{
     margin: 2rem;
-    
     display: flex;
     font-size: 16px;
    
@@ -102,4 +120,149 @@ strong{
 .description_box{
     margin-left: 1rem;
 }
+.getForm{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.div_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 28.12rem;
+    height: fit-content;
+   
+   /* margin: 1rem; */
+    /*margin-left: 3.5rem; */
+   /* margin-left: 6.25rem; */
+}
+.div_form_header{
+
+}
+.title_h1{
+    color: var(--Marine-blue);
+}
+.text_descript_form{
+    font-size: 20px;
+    color:var(--Cool-gray);
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+.div_form_personal_info_body{
+    display: flex;
+    flex-direction: column;
+}
+.label_form{
+    color: var(--Marine-blue);
+    font-size: 16px;
+    width:120px;
+    
+}
+.input_form{
+    width: 28.12rem;
+    padding: 10px;
+    height: 3rem;
+    border-radius: 10px;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+
+}
+
+.div_buttons_pageOne{
+    display: flex;
+    justify-content:flex-end;
+    
+  
+    margin-top: 5.75rem; 
+
+    margin-bottom: 1rem;
+}
+.div_buttons_pageTwo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.75rem;
+    margin-bottom: 2rem;
+}
+.div_buttons_pageTwo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.75rem;
+    margin-bottom: 2rem;
+}
+.link_go_back{
+    font-family:'Ubuntu' ;
+    font-weight: bold;
+    color:var(--Cool-gray);
+    cursor: pointer;
+
+}
+.link_go_back:hover{
+    font-size: 18px;
+}
+.buttom_next{
+    border-radius: 10px;
+    border: solid;
+    border-color: var(--Marine-blue);
+    background-color: var(--Marine-blue);
+    color: var(--White);
+    padding: 10px;
+    cursor: pointer;
+}
+#toStepTwo{
+
+}
+.body_form_select_plan{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    
+    column-gap: 20px;
+
+}
+.plan{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 138px;
+    height: 160px;
+ 
+    
+    border-color: var(--Purplish-blue);
+    border-style: solid;
+    border-width: 1px;
+
+    /*margin: 5px;*/
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+.plan_selecionado{
+    background-color: red;
+    border-color: var(--Marine-blue);
+    border-style: solid;
+    border-width: 3px;
+}
+
+.plan img{
+    width: 40px;
+    height: 40px;
+    margin-top:20px;
+    margin-left: 15px;
+
+}
+.plan p{
+
+}
+.plan div{
+    margin-bottom: 17px;
+    margin-left: 15px;
+}
+.plan spam{
+    color: red;
+}
+
+
+
 
