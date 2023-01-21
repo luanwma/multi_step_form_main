@@ -7,6 +7,10 @@
         planArcade.setAttribute("class", "plan")
         planArcade.setAttribute("id", "plan_arcade")
        // planArcade.setAttribute("onclick", "selectionPlan()")
+       /*var check = document.createElement("input")
+       check.setAttribute("type", "checkbox")
+       check.setAttribute("id", "check_plan")
+       planArcade.appendChild(check) */
         var imgArcadePlan = document.createElement("img")
         imgArcadePlan.src = "../assets/images/icon-arcade.svg"
         planArcade.appendChild(imgArcadePlan)

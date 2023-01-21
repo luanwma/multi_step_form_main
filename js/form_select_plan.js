@@ -48,6 +48,24 @@ export default function selectPlan(){
     divPlans.appendChild(advancedPlan)
     divPlans.appendChild(proPlan)
     divFormBody.appendChild(divPlans)
+
+
+    var divCheckbox =  document.createElement("div")
+    divCheckbox.setAttribute("class", "div_input_checkbox")
+    var pMonthly = document.createElement("p")
+    pMonthly.innerText = "Monthly"
+    pMonthly.setAttribute("id", "select_monthly")
+    var pYearly = document.createElement("p")
+    pYearly.innerText = "Yearly"
+    pYearly.setAttribute("id", "select_yearly")
+    var inputcheckbox = document.createElement("input")
+    inputcheckbox.setAttribute("type", "checkbox")
+    inputcheckbox.setAttribute("id", "checkbox_year_month")
+    divCheckbox.appendChild(pMonthly)
+    divCheckbox.appendChild(inputcheckbox)
+    divCheckbox.appendChild(pYearly)
+    divFormBody.appendChild(divCheckbox)
+
    
 
     var divButtom = document.createElement("div")

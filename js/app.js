@@ -63,8 +63,5 @@
 
 
 
-    function selectionPlan(){
-        alert("funfou")
-    }
    
 
