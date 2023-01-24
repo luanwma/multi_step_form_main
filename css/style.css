@@ -349,6 +349,44 @@ strong{
     background-color: var(--Cool-gray);
 }
 
+.divs_add_ons{
+    
+    width: 28.12rem;
+    height: 5rem;
+    border: solid 1px;
+    margin: 0.5rem;
+    border-radius: 10px;
+    border-color: var(--Pastel-blue);
+    display: flex;
+    flex-direction: row;
+    
+   
+    cursor: pointer;
 
 
+}
+
+.divs_add_ons div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+
+}
+.divs_add_ons div p{
+    font-weight: bolder;
+    font-size: 12px;
+    color:var(--Marine-blue)
+
+}
+.divs_add_ons div spam{
+    font-style: bolder;
+    font-size: 12px;
+    color: var(--Cool-gray)
+}
+.divs_add_ons input{
+    margin: 1rem;
+    display: flex;
+    
+}
 

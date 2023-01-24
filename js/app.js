@@ -1,4 +1,5 @@
     import criarFormulario from "./form_personal_info.js";
+    import pickAddOns from "./form_pick_add-ons.js";
     import selectPlan from "./form_select_plan.js";
 
 
@@ -43,7 +44,7 @@
     btnStepThree.addEventListener("click", () =>{
         var divGetForm = document.querySelector(".getForm")
         divGetForm.innerHTML = "<div> </div>"
-        
+        divGetForm = pickAddOns()
         btnStepOne.setAttribute("class", "circulo")
         btnStepTwo.setAttribute("class", "circulo")
         btnStepFour.setAttribute("class", "circulo")
