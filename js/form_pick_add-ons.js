@@ -120,6 +120,23 @@
 
         divFormBody.appendChild(divCustomizableProfile)
 
+        var divButtom = document.createElement("div")
+        divButtom.setAttribute("class", "div_buttons_pageTwo" )
+
+        var btnNextStep = document.createElement("button")
+        btnNextStep.setAttribute("class", "buttom_next")
+        btnNextStep.setAttribute("id", "toStepTwo")
+        btnNextStep.innerText = "Next Step"
+
+        var btnGoBack = document.createElement("p")
+        btnGoBack.setAttribute("class", "link_go_back")
+        btnGoBack.innerText = "Go Back"
+        divButtom.appendChild(btnGoBack)
+
+        divButtom.appendChild(btnNextStep)
+
+        divFormBody.appendChild(divButtom)
+
 
 
 
