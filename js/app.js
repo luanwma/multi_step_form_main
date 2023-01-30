@@ -9,6 +9,12 @@
     const btnStepThree = document.getElementById("stepTHREE");
     const btnStepFour = document.getElementById("stepFOUR");
 
+    const screenWidth = window.innerWidth 
+
+    
+
+
+
     const plan = document.getElementById("")
     window.onload = () => {
         var divGetForm = document.querySelector(".getForm")
@@ -61,6 +67,13 @@
         btnStepFour.setAttribute("class", "divOnchange circulo")
   
     })
+
+    if(screenWidth <= 500 ){
+        var descriptionBox = document.getElementsByClassName("description_box")
+        for(var i = 0 ; i < descriptionBox ; i++){
+            descriptionBox.innerHTML = ""
+        }
+    }
 
 
 

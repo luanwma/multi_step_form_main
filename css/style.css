@@ -64,10 +64,18 @@ header{
    /* margin: 1rem; */
     margin-top: 1rem;
     margin-left: 1rem;
+    max-width: 290px;
+    max-height: 600px;
+    
+    
+    
     background-image: url("../assets/images/bg-sidebar-desktop.svg");
     background-repeat: no-repeat;
-    width:291px ;
-    height: 568px;
+    
+    width:100% ;
+   
+    
+    
    /* border-top-right-radius: 11px; 
     border-bottom-right-radius: 11px; */
 }
@@ -79,21 +87,21 @@ main{
    
     align-items: center;
     
-    width: 100%;
+    width: 100%; 
 }
 header p{
     color: var(--Cool-gray);
 }
 .container_boxes{
     
-    max-height: 284px;
+   /* max-height: 284px; */
 
 }
 
 .step_box{
     margin: 2rem;
     display: flex;
-    font-size: 16px;
+    font-size: 12px;
    
 
 }
@@ -390,3 +398,84 @@ strong{
     
 }
 
+@media screen and (max-width:59rem){
+    .container{
+        
+        width: 59rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       /* justify-content: center; */
+       
+
+       background-color: aquamarine;
+        
+      
+    }
+    header{
+    
+        height: 172px;
+        max-width: 100%;
+        
+        background-image: url("../assets/images/bg-sidebar-mobile.svg"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+        margin-bottom: -50px;
+        
+      
+        
+    }
+    .container_boxes{
+        display: grid;
+        
+      /*  column-gap: 5px;
+        row-gap: 5px; */
+        grid-template-columns: auto auto auto auto;
+       
+        
+    }
+    
+
+    main{
+
+      
+        background-color: blueviolet;
+        width: 100%; 
+    }
+    header p{
+        color: #000;
+        content-visibility:hidden;
+        backface-visibility: hidden;
+       /* visibility: hidden; */
+
+    }
+    strong{
+    
+      
+    }
+    .getForm{
+       
+
+        
+    }
+
+    .div_form{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        height: fit-content;
+       
+       /* margin: 1rem; */
+        /*margin-left: 3.5rem; */
+       /* margin-left: 6.25rem; */
+    }
+}

@@ -4,6 +4,7 @@
 import componentProPlan from "./component_plan_pro.js"
 
     const pricePlanArcadebyMonth = 9 ,pricePlanAdvancedbyMonth = 12 , pricePlanProbyMonth = 15
+   
 export default function selectPlan(){
 
     var divGetForm = document.querySelector(".getForm")
